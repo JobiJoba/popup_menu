@@ -447,26 +447,11 @@ class _MenuItemWidgetState extends State<_MenuItemWidget> {
   Widget _createContent() {
     if (widget.item.menuImage != null) {
       // image and text
-      return Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: <Widget>[
-          Container(
+      return Container(
             width: 30.0,
-            height: 30.0,
+            height: 52.0,
             child: widget.item.menuImage,
-          ),
-          Container(
-            height: 22.0,
-            child: Material(
-              color: Colors.transparent,
-              child: Text(
-                widget.item.menuTitle,
-                style: widget.item.menuTextStyle,
-              ),
-            ),
-          )
-        ],
-      );
+          ),;
     } else {
       // only text
       return Container(
